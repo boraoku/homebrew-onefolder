@@ -17,8 +17,8 @@ class Onefolder < Formula
 
   BINARY_ALIASES = {
     "aarch64-apple-darwin": {},
-    "x86_64-apple-darwin": {}
-  }
+    "x86_64-apple-darwin":  {},
+  }.freeze
 
   def target_triple
     cpu = Hardware::CPU.arm? ? "aarch64" : "x86_64"
